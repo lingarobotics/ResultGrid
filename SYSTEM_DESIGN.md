@@ -32,6 +32,16 @@ Academic structures should be represented using organized and extensible data mo
 
 ---
 
+## Architectural Context
+
+ResultGrid is not intended to replace university systems.
+
+The project serves as an engineering exploration of scalable result delivery architectures and backend design decisions that may improve reliability during peak result publication periods.
+
+The focus is on understanding how backend systems behave under large-scale read-heavy workloads and evaluating architectural approaches that reduce operational bottlenecks.
+
+---
+
 ## Academic Hierarchy
 
 The system models academic information using the hierarchy:
@@ -114,6 +124,41 @@ Engineering considerations include:
 * Database load reduction
 
 Future evaluations may include content publishing approaches for immutable result data.
+
+---
+
+## Alternative Approaches Considered
+
+### Traditional Request-Driven Architecture
+
+Student Request
+→ Application Server
+→ Database Query
+→ Response Generation
+
+Advantages:
+
+* Simpler implementation
+* Familiar architecture
+
+Limitations:
+
+* Increased database dependency
+* Higher contention during peak traffic
+
+### Content-Oriented Delivery Architecture
+
+Student Request
+→ Published Result Artifact
+→ Response
+
+Advantages:
+
+* Reduced database load
+* Predictable retrieval performance
+* Improved scalability for immutable result data
+
+This architecture is being explored as part of future project iterations.
 
 ---
 
