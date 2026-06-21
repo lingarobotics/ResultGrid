@@ -129,6 +129,40 @@ Result
 
 ---
 
+## Entity Relationship Overview
+
+District
+
+1 → N
+
+College
+
+1 → N
+
+Department
+
+1 → N
+
+Student
+
+1 → N
+
+Result
+
+Semester
+
+1 → N
+
+Result
+
+Subject
+
+1 → N
+
+Result
+
+---
+
 ## Normalization Strategy
 
 The schema prioritizes:
@@ -151,6 +185,17 @@ Planned indexes include:
 * Semester Identifier
 
 The objective is predictable retrieval performance under read-heavy workloads.
+
+---
+
+## Database Design Philosophy
+
+The schema prioritizes clarity, normalization, and maintainability.
+
+Academic metadata is modeled independently from student result data to reduce duplication and preserve consistency.
+
+The design favors explicit relationships and referential integrity over denormalized storage patterns.
+
 
 ---
 
