@@ -43,6 +43,13 @@ District
 
 ---
 
+## Status: Active Development
+
+Current Phase:
+Backend Architecture and Data Model Design
+
+---
+
 ## Technology Stack
 
 ### Backend
@@ -99,19 +106,6 @@ The repository documentation is intentionally separated by engineering concern.
 | DATABASE.md          | Relational schema design, entity relationships, indexing strategy          |
 | API_SPECIFICATION.md | REST endpoints, request contracts, response models                         |
 | ROADMAP.md           | Development milestones and future evolution                                |
-
----
-
-## Current Status
-
-Status: Active Development
-
-Current focus:
-
-* Academic hierarchy modeling
-* Result retrieval APIs
-* PostgreSQL integration
-* Core backend architecture
 
 ---
 
