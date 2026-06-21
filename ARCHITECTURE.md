@@ -24,6 +24,26 @@ Infrastructure components provide supporting capabilities such as security, cach
 
 ---
 
+## Architectural Decisions
+
+### Why Spring Boot
+
+Spring Boot was selected due to its mature ecosystem, enterprise adoption, strong support for REST APIs, security, persistence, and observability.
+
+### Why PostgreSQL
+
+PostgreSQL was selected because the academic domain contains strongly related entities such as districts, colleges, departments, students, semesters, and results. A relational database provides data integrity, consistency, and efficient querying for these relationships.
+
+### Why Layered Architecture
+
+A layered architecture simplifies maintenance by separating request handling, business logic, persistence concerns, and infrastructure responsibilities.
+
+### Why Caching
+
+Academic metadata changes infrequently but may be requested frequently. Caching reduces repetitive database access and improves response consistency.
+
+---
+
 ## Application Layers
 
 Client Request
